@@ -3,10 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Proiect_EIM/app/src/main/res/drawable-v24/circular_progressbar_grey.xml" value="0.14537037037037037" />
+        <entry key="..\:/Proiect_EIM/app/src/main/res/drawable/circular_progressbar.xml" value="0.14537037037037037" />
         <entry key="..\:/Proiect_EIM/app/src/main/res/drawable/intem_circular_color_accent_border.xml" value="0.14537037037037037" />
         <entry key="..\:/Proiect_EIM/app/src/main/res/drawable/intem_color_accent_border_ripple.xml" value="0.14537037037037037" />
         <entry key="..\:/Proiect_EIM/app/src/main/res/drawable/item_circular_color_accent_border.xml" value="0.14537037037037037" />
+        <entry key="..\:/Proiect_EIM/app/src/main/res/drawable/item_circular_color_background.xml" value="0.14537037037037037" />
+        <entry key="..\:/Proiect_EIM/app/src/main/res/layout/activity_exercise.xml" value="0.20967741935483872" />
         <entry key="..\:/Proiect_EIM/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Proiect_EIM/app/src/main/res/xml/path.xml" value="0.1" />
       </map>
     </option>
   </component>

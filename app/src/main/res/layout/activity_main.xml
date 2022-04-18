@@ -37,4 +37,15 @@
             />
     </FrameLayout>
 
+    <ImageButton
+        android:id="@+id/ibDownload"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/download"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:scaleType="fitXY"
+        android:layout_margin="5dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
