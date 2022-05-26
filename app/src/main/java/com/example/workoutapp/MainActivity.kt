@@ -6,8 +6,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.FrameLayout
 import android.widget.Toast
+import androidx.core.view.drawToBitmap
+import androidx.lifecycle.lifecycleScope
 import com.example.workoutapp.databinding.ActivityMainBinding
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.io.ByteArrayOutputStream
 import java.io.File
@@ -29,6 +32,9 @@ class MainActivity : AppCompatActivity() {
 
         binding?.ibDownload?.setOnClickListener {
             Toast.makeText(this, "Trying to save", Toast.LENGTH_SHORT).show()
+            lifecycleScope.launch {
+                        save(binding?.ibDownload!!.drawToBitmap())
+            }
         }
 
     }

@@ -24,7 +24,7 @@ object Constants {
 
         val squads = ExerciseModel(
             3,
-            "squads",
+            "Squads",
             R.drawable.exercises,
             false,
             false
