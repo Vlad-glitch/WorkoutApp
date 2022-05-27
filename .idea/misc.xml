@@ -11,8 +11,12 @@
         <entry key="..\:/Proiect_EIM/app/src/main/res/drawable/intem_color_accent_border_ripple.xml" value="0.14537037037037037" />
         <entry key="..\:/Proiect_EIM/app/src/main/res/drawable/item_circular_color_accent_border.xml" value="0.14537037037037037" />
         <entry key="..\:/Proiect_EIM/app/src/main/res/drawable/item_circular_color_background.xml" value="0.14537037037037037" />
+        <entry key="..\:/Proiect_EIM/app/src/main/res/drawable/item_circular_color_gray_background.xml" value="0.2984375" />
+        <entry key="..\:/Proiect_EIM/app/src/main/res/drawable/item_circular_color_selected_background.xml" value="0.1361111111111111" />
         <entry key="..\:/Proiect_EIM/app/src/main/res/layout/activity_exercise.xml" value="0.25" />
+        <entry key="..\:/Proiect_EIM/app/src/main/res/layout/activity_finish.xml" value="0.5" />
         <entry key="..\:/Proiect_EIM/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Proiect_EIM/app/src/main/res/layout/item_exercise_status.xml" value="0.9" />
         <entry key="..\:/Proiect_EIM/app/src/main/res/xml/path.xml" value="0.1" />
       </map>
     </option>
