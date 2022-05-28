@@ -30,6 +30,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding?.flBMI?.setOnClickListener{
+            val intent = Intent(this, BMIActivity::class.java)
+            startActivity(intent)
+        }
+
         binding?.ibDownload?.setOnClickListener {
             Toast.makeText(this, "Trying to save", Toast.LENGTH_SHORT).show()
             lifecycleScope.launch {
