@@ -20,8 +20,10 @@ class BMIActivity : AppCompatActivity() {
 
         setSupportActionBar(binding?.toolbarBmiActivity)
 
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.title = "CALCULATE BMI"
+        if(supportActionBar != null) {
+            supportActionBar?.setDisplayHomeAsUpEnabled(true)
+            supportActionBar?.title = "CALCULATE BMI"
+        }
 
         binding?.toolbarBmiActivity?.setNavigationOnClickListener {
             onBackPressed()
@@ -41,6 +43,7 @@ class BMIActivity : AppCompatActivity() {
                     .show()
             }
         }
+        // TODO fragments for US and EU units
     }
 
     private fun displayBMIResult(bmi: Float) {
