@@ -6,6 +6,9 @@
         <entry key="..\:/Proiect_EIM/app/src/main/res/drawable-v24/circular_progressbar_grey.xml" value="0.14537037037037037" />
         <entry key="..\:/Proiect_EIM/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1859375" />
         <entry key="..\:/Proiect_EIM/app/src/main/res/drawable/circular_progressbar.xml" value="0.14537037037037037" />
+        <entry key="..\:/Proiect_EIM/app/src/main/res/drawable/drawable_radio_group_tab_background.xml" value="0.3074074074074074" />
+        <entry key="..\:/Proiect_EIM/app/src/main/res/drawable/drawable_units_tab_selector.xml" value="0.3074074074074074" />
+        <entry key="..\:/Proiect_EIM/app/src/main/res/drawable/drawable_units_tab_text_color_selector.xml" value="0.3074074074074074" />
         <entry key="..\:/Proiect_EIM/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1859375" />
         <entry key="..\:/Proiect_EIM/app/src/main/res/drawable/intem_circular_color_accent_border.xml" value="0.14537037037037037" />
         <entry key="..\:/Proiect_EIM/app/src/main/res/drawable/intem_color_accent_border_ripple.xml" value="0.14537037037037037" />
@@ -19,6 +22,9 @@
         <entry key="..\:/Proiect_EIM/app/src/main/res/layout/activity_history.xml" value="0.33" />
         <entry key="..\:/Proiect_EIM/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Proiect_EIM/app/src/main/res/layout/custom_dialog.xml" value="0.1" />
+        <entry key="..\:/Proiect_EIM/app/src/main/res/layout/fragment_imperial.xml" value="0.265625" />
+        <entry key="..\:/Proiect_EIM/app/src/main/res/layout/fragment_metric.xml" value="0.265625" />
+        <entry key="..\:/Proiect_EIM/app/src/main/res/layout/fragment_metric2.xml" value="0.265625" />
         <entry key="..\:/Proiect_EIM/app/src/main/res/layout/item_exercise_status.xml" value="0.9" />
         <entry key="..\:/Proiect_EIM/app/src/main/res/layout/item_history_row.xml" value="0.25" />
         <entry key="..\:/Proiect_EIM/app/src/main/res/xml/path.xml" value="0.1" />
