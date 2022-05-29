@@ -1,9 +1,13 @@
 package com.example.workoutapp
 
+import java.text.SimpleDateFormat
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.lifecycle.lifecycleScope
 import com.example.workoutapp.databinding.ActivityExerciseBinding
 import com.example.workoutapp.databinding.ActivityFinishBinding
+import kotlinx.coroutines.launch
+import java.util.*
 
 class FinishActivity : AppCompatActivity() {
 
@@ -28,5 +32,22 @@ class FinishActivity : AppCompatActivity() {
             finish()
         }
 
+        val dao = (application as WorkoutApp).db.historyDao()
+        addDateToDatabase(dao)
+
     }
+
+    private fun addDateToDatabase(historyDao: HistoryDao){
+
+        val c = Calendar.getInstance()
+        val dateTime = c.time
+
+        val sdf = SimpleDateFormat("dd MMM yyyy HH:mm:ss", Locale.getDefault())
+        val date = sdf.format(dateTime)
+
+        lifecycleScope.launch {
+            historyDao.insert(HistoryEntity(date))
+        }
+    }
+
 }

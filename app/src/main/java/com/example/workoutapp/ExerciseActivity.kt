@@ -27,8 +27,8 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     private var exerciseList : ArrayList<ExerciseModel>? = null
     private var currentExercise = -1
 
-    private var rVal = 3000
-    private var eval = 3000
+    private var rVal = 1000
+    private var eval = 1000
 
     private var tts: TextToSpeech? = null
 
