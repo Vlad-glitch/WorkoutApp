@@ -9,7 +9,7 @@ object Constants {
         val jumpingJacks = ExerciseModel(
             1,
             "Jumping Jacks",
-            R.drawable.exercises,
+            R.drawable.img_2,
             false,
             false
         )
@@ -18,7 +18,7 @@ object Constants {
         val pushups = ExerciseModel(
             2,
             "Pushups",
-            R.drawable.exercises,
+            R.drawable.img_1,
             false,
             false
         )
@@ -27,7 +27,7 @@ object Constants {
         val squads = ExerciseModel(
             3,
             "Squads",
-            R.drawable.exercises,
+            R.drawable.img_3,
             false,
             false
         )

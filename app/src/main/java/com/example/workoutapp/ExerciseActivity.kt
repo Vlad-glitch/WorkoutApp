@@ -65,7 +65,7 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
                         val result =  response.body()?.name
                         val exercise = result?.let {
                             ExerciseModel(exerciseList!!.size + 1,
-                                it, R.drawable.exercises,false, false)
+                                it, R.drawable.img_4,false, false)
                         }
                         if (exercise != null) {
                             exerciseList!!.add(exercise)
