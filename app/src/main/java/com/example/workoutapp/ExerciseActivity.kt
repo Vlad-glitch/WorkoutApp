@@ -12,6 +12,9 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.workoutapp.databinding.ActivityExerciseBinding
 import com.example.workoutapp.databinding.CustomDialogBinding
+import com.example.workoutapp.network.ApiClient
+import com.example.workoutapp.network.Character
+import retrofit2.Response
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -33,6 +36,7 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     private var tts: TextToSpeech? = null
 
     private var exerciseAdapter : ExerciseStatusAdapter? = null
+    private var addedExercise : Boolean? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,7 +49,36 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             supportActionBar?.setDisplayHomeAsUpEnabled(true)
         }
 
+        addedExercise = intent.getBooleanExtra(Constants.addedExercise, false)
+
         exerciseList = Constants.defaultExercisesList()
+        if(addedExercise == true) {
+            val client = ApiClient.apiService.fetch()
+            client.enqueue(object : retrofit2.Callback<Character>{
+                override fun onResponse(
+                    call: retrofit2.Call<Character>,
+                    response: Response<Character>
+                ){
+                    if(response.isSuccessful) {
+                        Log.d("response ", response.body().toString())
+
+                        val result =  response.body()?.name
+                        val exercise = result?.let {
+                            ExerciseModel(exerciseList!!.size + 1,
+                                it, R.drawable.exercises,false, false)
+                        }
+                        if (exercise != null) {
+                            exerciseList!!.add(exercise)
+                        }
+                    }
+
+                }
+
+                override fun onFailure(call: retrofit2.Call<Character>, t: Throwable) {
+                    t.message?.let { Log.e("failed ", it) }
+                }
+            })
+        }
 
         tts = TextToSpeech(this, this)
 
@@ -218,3 +251,4 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         tts!!.speak(text, TextToSpeech.QUEUE_FLUSH, null, "")
     }
 }
+

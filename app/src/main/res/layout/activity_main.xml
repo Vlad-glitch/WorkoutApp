@@ -102,6 +102,15 @@
         android:textSize="22sp"
         android:textStyle="bold" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add daily exercise"
+        app:layout_constraintBottom_toTopOf="@+id/ibDownload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@android:color/holo_blue_bright"/>
+
     <ImageButton
         android:id="@+id/ibDownload"
         android:layout_width="50dp"

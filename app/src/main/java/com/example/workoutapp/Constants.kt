@@ -2,6 +2,8 @@ package com.example.workoutapp
 
 object Constants {
 
+    const val addedExercise: String = "added"
+
     fun defaultExercisesList(): ArrayList<ExerciseModel>{
         val exerciseList = ArrayList<ExerciseModel>()
         val jumpingJacks = ExerciseModel(
